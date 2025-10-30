@@ -1,219 +1,442 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Free 30-Min Real Estate Strategy Session</title>
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="color-scheme" content="light">
-    <meta name="supported-color-schemes" content="light">
-    <style>
-      /* Some clients respect <style> in head; critical styles are inline below */
-      @media screen and (max-width:600px){
-        .container{width:100% !important}
-        .stack{display:block !important;width:100% !important}
-        .center{ text-align:center !important }
-      }
-    </style>
-  </head>
-  <body style="Margin:0;padding:0;background:#ffffff;">
-    <!-- Preheader (hidden in many clients) -->
-    <div style="display:none;max-height:0;overflow:hidden;line-height:1px;opacity:0;">
-      Claim your free 30-minute 1:1 strategy session for Turkey & Northern Cyprus.
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Free 30-Min Strategy Session | TIMONDRO</title>
+  <meta name="description" content="Answer a few quick questions and jump straight to WhatsApp with your answers to book a free 30-minute strategy session."/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#f15a29; --brand2:#ff8a50; --text:#0b0e11; --muted:#6b7280;
+      --card:#11151a; --bd:#e5e7eb; --ring:0 0 0 3px rgba(241,90,41,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text); background:#fff; -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .btn{
+      appearance:none;border:0;border-radius:12px;padding:14px 18px;font-weight:800;cursor:pointer;
+      background:linear-gradient(135deg,var(--brand),var(--brand2));color:#081018;box-shadow:0 10px 30px rgba(223,102,21,.35);
+      transition:transform .08s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-ghost{background:#1a212b;color:#fff;box-shadow:none}
+    header{border-bottom:1px solid #e6e6e6;background:#fff}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand h1{font-family:Poppins,Inter,sans-serif;font-size:18px;margin:0;font-weight:900}
+    .hero{padding:40px 0 10px}
+    .hero-intro{max-width:900px;margin:0 auto;text-align:center}
+    .eyebrow{color:var(--brand);font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+    .eyebrow-zoom{font-size:18px;font-weight:700;color:var(--brand2);margin-left:8px}
+    h2.title{font-family:Poppins,Inter,sans-serif;font-size:42px;line-height:1.15;margin:10px 0 12px}
+    p.lead{font-size:18px;color:var(--muted);margin:0 auto;max-width:720px}
+    .badge-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+    .badge{display:flex;gap:8px;align-items:center;border:1px solid #ececec;background:#fafafa;padding:8px 12px;border-radius:999px;font-size:13px}
+
+    /* Trust logos */
+    .trust{padding:18px 0 0}
+    .trust .row{display:flex;gap:22px;flex-wrap:wrap;align-items:center;justify-content:center}
+    .trust img{height:60px !important;width:auto !important;filter:none !important;opacity:1 !important;margin:0 8px !important}
+
+    /* Sections */
+    section{padding:60px 0}
+    .section-title{font-family:Poppins,Inter,sans-serif;font-size:28px;margin:0 0 8px}
+    .section-lead{color:var(--muted);margin:0 0 18px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px;color:#e8eef6}
+    .icon{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(96,165,250,.25),rgba(45,212,191,.25));border:1px solid rgba(255,255,255,.1)}
+
+    /* Survey */
+    .survey-wrap{max-width:960px;margin:26px auto 0}
+    .sv-progress{display:flex;align-items:center;gap:10px;margin:0 0 20px}
+    .sv-bar{flex:1;height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+    .sv-bar>i{display:block;height:12px;background:linear-gradient(90deg,var(--brand),var(--brand2));width:0%}
+    .sv-stepcount{font-size:14px;color:#64748b}
+    .sv-card{background:#fff;border:1px solid var(--bd);border-radius:22px;box-shadow:0 12px 36px rgba(15,23,42,.12);padding:28px}
+    .sv-q{margin:0 0 22px;font-size:24px;line-height:1.35}
+    .sv-grid{display:grid;gap:16px}
+    @media(min-width:700px){ .sv-grid{grid-template-columns:repeat(2,1fr)} }
+    .sv-opt{border:2px solid var(--bd);background:#fff;border-radius:16px;padding:22px;text-align:center;cursor:pointer;font-size:18px}
+    .sv-opt:hover{border-color:#d1d5db;box-shadow:0 10px 24px rgba(15,23,42,.1)}
+    .sv-hidden{display:none}
+    .sv-field{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .sv-input{width:100%;padding:16px 18px;border:2px solid var(--bd);border-radius:14px;font-size:16px}
+    .sv-next{padding:14px 18px;border-radius:12px;border:2px solid var(--brand);background:#fff;color:var(--brand);font-weight:800;cursor:pointer}
+    .sv-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .sv-btn{padding:14px 18px;border-radius:12px;text-decoration:none;display:inline-block;font-weight:800}
+    .sv-primary{color:#fff;background:linear-gradient(90deg,var(--brand),var(--brand2))}
+    .sv-ghost{color:var(--brand);border:2px solid var(--brand);background:#fff}
+    .sv-pre{background:#0b1220;color:#e2e8f0;border-radius:14px;padding:16px;overflow:auto;font-size:14px}
+
+    /* Steps display */
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px;color:#e8eef6}
+    .step .num{position:absolute;top:-12px;left:-12px;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#081018;font-weight:900}
+
+    @media(max-width:960px){
+      h2.title{font-size:34px}
+      .cards{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav container">
+      <div class="brand">
+        <h1>Free Strategy Session</h1>
+      </div>
+      <a class="btn" href="#survey">Book your session</a>
     </div>
+  </header>
 
-    <!-- Wrapper -->
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#ffffff;">
-      <tr>
-        <td align="center">
-          <table role="presentation" class="container" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;Margin:0 auto;">
-            <!-- Header -->
-            <tr>
-              <td style="padding:20px 24px;border-bottom:1px solid #e6e6e6;">
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                  <tr>
-                    <td class="stack" style="vertical-align:middle;">
-                      <!-- If you want a logo, drop the img below and upload file named logo.png -->
-                      <!-- <img src="logo.png" width="140" alt="TIMONDRO" style="display:block;border:0;outline:none;text-decoration:none;height:auto;"> -->
-                      <div style="font:800 16px/1.2 Poppins,Arial,Helvetica,sans-serif;color:#0b0e11;">TIMONDRO Real Estate</div>
-                    </td>
-                    <td class="stack" align="right" style="vertical-align:middle;">
-                      <!-- Bulletproof button -->
-                      <!--[if mso]>
-                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://yourdomain.com/strategy-survey?utm_source=mailchimp&utm_medium=email&utm_campaign=30min" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="16%" stroke="f" fillcolor="#f15a29">
-                        <w:anchorlock/>
-                        <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:bold;">Start 30-sec Survey</center>
-                      </v:roundrect>
-                      <![endif]-->
-                      <!--[if !mso]><!-- -->
-                      <a href="https://yourdomain.com/strategy-survey?utm_source=mailchimp&utm_medium=email&utm_campaign=30min"
-                         style="background:#f15a29;border-radius:8px;color:#ffffff;display:inline-block;font-weight:700;text-decoration:none;padding:12px 16px;font-size:14px;">
-                        Start 30-sec Survey
-                      </a>
-                      <!--<![endif]-->
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-intro">
+        <div class="eyebrow">
+          🚨 Last Chance! 🚨 <span class="eyebrow-zoom">Book Your 1:1 Online Meeting NOW!</span>
+        </div>
+        <h2 class="title">⏳ 30 Minutes Only – Limited Spots Available! ⏳</h2>
+        <p class="lead"><strong>Don’t miss out on getting personalized real estate advice from an expert. <u>Book your spot before it’s too late!</u></strong></p>
 
-            <!-- Hero -->
-            <tr>
-              <td style="padding:28px 24px 8px;">
-                <div style="text-transform:uppercase;letter-spacing:.12em;color:#f15a29;font:900 14px/1 Inter,Arial,sans-serif;text-align:center;">
-                  Last Chance — Book Your 1:1 Online Meeting
-                </div>
-                <h1 style="Margin:10px 0 8px;font:800 28px/1.2 Poppins,Arial,Helvetica,sans-serif;color:#0b0e11;text-align:center;">
-                  Free 30-Minute Real Estate Strategy Session
-                </h1>
-                <p style="Margin:0 auto 16px;max-width:520px;text-align:center;color:#6b7280;font:400 15px/1.6 Inter,Arial,sans-serif;">
-                  Get tailored advice on locations, legal steps, and smart deals in Turkey & Northern Cyprus. Limited spots.
-                </p>
-                <!-- Primary CTA -->
-                <div style="text-align:center;Margin:18px 0 6px;">
-                  <!--[if mso]>
-                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://yourdomain.com/strategy-survey?utm_source=mailchimp&utm_medium=email&utm_campaign=30min" style="height:48px;v-text-anchor:middle;width:280px;" arcsize="16%" stroke="f" fillcolor="#f15a29">
-                    <w:anchorlock/>
-                    <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Reserve Your Spot</center>
-                  </v:roundrect>
-                  <![endif]-->
-                  <!--[if !mso]><!-- -->
-                  <a href="https://yourdomain.com/strategy-survey?utm_source=mailchimp&utm_medium=email&utm_campaign=30min"
-                     style="background:#f15a29;border-radius:10px;color:#ffffff;display:inline-block;font-weight:800;text-decoration:none;padding:14px 22px;font-size:16px;">
-                    Reserve Your Spot
-                  </a>
-                  <!--<![endif]-->
-                </div>
-              </td>
-            </tr>
+        <div class="badge-row" aria-label="Highlights">
+          <div class="badge">✅ Senior advisor, not a bot</div>
+          <div class="badge">✅ Developer & resale options</div>
+          <div class="badge">✅ Clear legal guidance</div>
+          <div class="badge">✅ No pressure, no fees</div>
+        </div>
 
-            <!-- Badges -->
-            <tr>
-              <td align="center" style="padding:8px 12px 2px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-                  <tr>
-                    <td style="border:1px solid #eaeaea;border-radius:999px;padding:6px 10px;font:600 12px Inter,Arial;color:#111;">✅ Senior advisor, not a bot</td>
-                    <td width="8"></td>
-                    <td style="border:1px solid #eaeaea;border-radius:999px;padding:6px 10px;font:600 12px Inter,Arial;color:#111;">✅ Developer & resale options</td>
-                    <td width="8"></td>
-                    <td style="border:1px solid #eaeaea;border-radius:999px;padding:6px 10px;font:600 12px Inter,Arial;color:#111;">✅ Clear legal guidance</td>
-                    <td width="8"></td>
-                    <td style="border:1px solid #eaeaea;border-radius:999px;padding:6px 10px;font:600 12px Inter,Arial;color:#111;">✅ No pressure, no fees</td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+        <div style="display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;justify-content:center">
+          <a class="btn" href="#survey">Book your session</a>
+          <a class="btn btn-ghost" href="#process">See how it works</a>
+        </div>
 
-            <!-- Trust logos (filenames only) -->
-            <tr>
-              <td align="center" style="padding:18px 24px 10px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-                  <tr>
-                    <td align="center" style="padding:0 10px;">
-                      <img src="google.png" width="96" height="auto" alt="Google" style="display:block;border:0;outline:none;text-decoration:none;">
-                    </td>
-                    <td align="center" style="padding:0 10px;">
-                      <img src="Meta-Logo.png" width="96" height="auto" alt="Meta" style="display:block;border:0;outline:none;text-decoration:none;">
-                    </td>
-                    <td align="center" style="padding:0 10px;">
-                      <img src="Ibb_amblem.png" width="96" height="auto" alt="Büyükşehir Belediyesi" style="display:block;border:0;outline:none;text-decoration:none;">
-                    </td>
-                    <td align="center" style="padding:0 10px;">
-                      <img src="handelsblatt.png" width="96" height="auto" alt="Handelsblatt" style="display:block;border:0;outline:none;text-decoration:none;">
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+        <div class="trust">
+          <div class="row" aria-label="As seen on / trusted by">
+            <img src="google.png" alt="Google">
+            <img src="Meta-Logo.png" alt="Meta">
+            <img src="Ibb_amblem.png" alt="Büyükşehir Belediyesi">
+            <img src="handelsblatt.png" alt="Handelsblatt">
+          </div>
+        </div>
+      </div>
 
-            <!-- Mini in-email question (click-to-answer links) -->
-            <tr>
-              <td style="padding:20px 24px;">
-                <h2 style="Margin:0 0 8px;font:800 20px Poppins,Arial,Helvetica,sans-serif;color:#0b0e11;">What’s your main goal?</h2>
-                <p style="Margin:0 0 12px;color:#6b7280;font:400 14px Inter,Arial;">Tap an option to prefill the survey for you:</p>
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                  <tr>
-                    <td class="stack" width="50%" style="padding:6px;">
-                      <a href="https://yourdomain.com/strategy-survey?goal=Holiday%20Home&utm_source=mailchimp&utm_medium=email&utm_campaign=30min&email=*|EMAIL|*&name=*|FNAME|*"
-                         style="display:block;text-align:center;background:#ffffff;border:2px solid #e5e7eb;border-radius:10px;padding:12px 8px;color:#111;font:700 14px Inter,Arial;text-decoration:none;">
-                        🏖️ Holiday Home
-                      </a>
-                    </td>
-                    <td class="stack" width="50%" style="padding:6px;">
-                      <a href="https://yourdomain.com/strategy-survey?goal=Investment%20%2F%20Rental&utm_source=mailchimp&utm_medium=email&utm_campaign=30min&email=*|EMAIL|*&name=*|FNAME|*"
-                         style="display:block;text-align:center;background:#ffffff;border:2px solid #e5e7eb;border-radius:10px;padding:12px 8px;color:#111;font:700 14px Inter,Arial;text-decoration:none;">
-                        💼 Investment / Rental
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="stack" width="50%" style="padding:6px;">
-                      <a href="https://yourdomain.com/strategy-survey?goal=Relocation&utm_source=mailchimp&utm_medium=email&utm_campaign=30min&email=*|EMAIL|*&name=*|FNAME|*"
-                         style="display:block;text-align:center;background:#ffffff;border:2px solid #e5e7eb;border-radius:10px;padding:12px 8px;color:#111;font:700 14px Inter,Arial;text-decoration:none;">
-                        🏠 Relocation
-                      </a>
-                    </td>
-                    <td class="stack" width="50%" style="padding:6px;">
-                      <a href="https://yourdomain.com/strategy-survey?goal=Residence%20Permit&utm_source=mailchimp&utm_medium=email&utm_campaign=30min&email=*|EMAIL|*&name=*|FNAME|*"
-                         style="display:block;text-align:center;background:#ffffff;border:2px solid #e5e7eb;border-radius:10px;padding:12px 8px;color:#111;font:700 14px Inter,Arial;text-decoration:none;">
-                        🛂 Residence Permit
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+      <!-- ================= SURVEY ================= -->
+      <div id="survey" class="survey-wrap">
+        <div class="sv-progress">
+          <div class="sv-bar"><i id="sv-barfill" style="width:0%"></i></div>
+          <div class="sv-stepcount">Step <b id="sv-stepnum">1</b>/<b id="sv-steptotal">15</b></div>
+        </div>
 
-            <!-- What you’ll get -->
-            <tr>
-              <td style="padding:8px 24px 20px;">
-                <h2 style="Margin:0 0 10px;font:800 20px Poppins,Arial,Helvetica,sans-serif;color:#0b0e11;">What you’ll get</h2>
-                <ul style="Margin:0;padding-left:18px;color:#111;font:400 14px/1.6 Inter,Arial;">
-                  <li>Location shortlist: Istanbul, Antalya, Northern Cyprus</li>
-                  <li>Buying roadmap: Tapu, taxes, due diligence, utilities</li>
-                  <li>Hand-picked projects matched to your budget & timeline</li>
-                </ul>
-              </td>
-            </tr>
+        <!-- 1 -->
+        <div class="sv-card sv-step" id="sv-step-1">
+          <h2 class="sv-q">What’s your main goal?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('goal','Holiday Home'); svNext();">🏖️ Holiday Home</button>
+            <button class="sv-opt" onclick="svAnswer('goal','Investment / Rental'); svNext();">💼 Investment / Rental</button>
+            <button class="sv-opt" onclick="svAnswer('goal','Relocation'); svNext();">🏠 Relocation</button>
+            <button class="sv-opt" onclick="svAnswer('goal','Residence Permit'); svNext();">🛂 Residence Permit</button>
+          </div>
+        </div>
 
-            <!-- Secondary CTA -->
-            <tr>
-              <td align="center" style="padding:8px 24px 24px;">
-                <!--[if mso]>
-                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://yourdomain.com/strategy-survey?utm_source=mailchimp&utm_medium=email&utm_campaign=30min" style="height:46px;v-text-anchor:middle;width:260px;" arcsize="16%" stroke="f" fillcolor="#f15a29">
-                  <w:anchorlock/>
-                  <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Book Free Session</center>
-                </v:roundrect>
-                <![endif]-->
-                <!--[if !mso]><!-- -->
-                <a href="https://yourdomain.com/strategy-survey?utm_source=mailchimp&utm_medium=email&utm_campaign=30min"
-                   style="background:#f15a29;border-radius:10px;color:#ffffff;display:inline-block;font-weight:800;text-decoration:none;padding:12px 22px;font-size:16px;">
-                  Book Free Session
-                </a>
-                <!--<![endif]-->
-              </td>
-            </tr>
+        <!-- 2 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-2">
+          <h2 class="sv-q">Preferred location?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('location','Istanbul'); svNext();">🌆 Istanbul</button>
+            <button class="sv-opt" onclick="svAnswer('location','Antalya / Alanya'); svNext();">🌴 Antalya / Alanya</button>
+            <button class="sv-opt" onclick="svAnswer('location','Northern Cyprus'); svNext();">🌊 Northern Cyprus</button>
+            <button class="sv-opt" onclick="svAnswer('location','Not sure yet'); svNext();">🤔 Not sure yet</button>
+          </div>
+        </div>
 
-            <!-- WhatsApp fallback -->
-            <tr>
-              <td align="center" style="padding:0 24px 28px;">
-                <a href="https://wa.me/905425301811?text=Hi%20TIMONDRO%2C%20I%27d%20like%20to%20book%20a%20free%2030-min%20strategy%20session."
-                   style="color:#111;font:700 14px Inter,Arial;text-decoration:none;">
-                  Or message us on WhatsApp → +90 542 530 1811
-                </a>
-              </td>
-            </tr>
+        <!-- 3 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-3">
+          <h2 class="sv-q">Property type?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('type','Apartment'); svNext();">🏢 Apartment</button>
+            <button class="sv-opt" onclick="svAnswer('type','Villa / House'); svNext();">🏡 Villa / House</button>
+            <button class="sv-opt" onclick="svAnswer('type','Land'); svNext();">🌿 Land</button>
+            <button class="sv-opt" onclick="svAnswer('type','Open to options'); svNext();">🔍 Open to options</button>
+          </div>
+        </div>
 
-            <!-- Footer -->
-            <tr>
-              <td style="padding:16px 24px;border-top:1px solid #e6e6e6;color:#6b7280;font:400 12px Inter,Arial;">
-                TIMONDRO Real Estate • Türkiye • Northern Cyprus<br>
-                You’re receiving this because you opted in via our website. <a href="*|UNSUB|*" style="color:#6b7280;text-decoration:underline;">Unsubscribe</a> • <a href="*|UPDATE_PROFILE|*" style="color:#6b7280;text-decoration:underline;">Update preferences</a>
-              </td>
-            </tr>
+        <!-- 4 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-4">
+          <h2 class="sv-q">Bedrooms needed?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('bedrooms','Studio / 1+1'); svNext();">🛏️ Studio / 1+1</button>
+            <button class="sv-opt" onclick="svAnswer('bedrooms','2+1'); svNext();">🛏️ 2+1</button>
+            <button class="sv-opt" onclick="svAnswer('bedrooms','3+1'); svNext();">🛏️ 3+1</button>
+            <button class="sv-opt" onclick="svAnswer('bedrooms','4+1 or more'); svNext();">🛏️ 4+1+</button>
+          </div>
+        </div>
 
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
+        <!-- 5 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-5">
+          <h2 class="sv-q">Budget range?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('budget','Up to €100k (≈ $110k / £86k / ₺3.9M)'); svNext();">🪙 Up to €100k</button>
+            <button class="sv-opt" onclick="svAnswer('budget','€100k–€200k (≈ $110k–$220k / £86k–£172k / ₺3.9M–₺7.8M)'); svNext();">💶 €100k–€200k</button>
+            <button class="sv-opt" onclick="svAnswer('budget','€200k–€500k'); svNext();">💷 €200k–€500k</button>
+            <button class="sv-opt" onclick="svAnswer('budget','€500k+'); svNext();">💎 €500k+</button>
+          </div>
+          <div class="sv-help">Shown in EUR with helpful USD/GBP/TRY equivalents.</div>
+        </div>
+
+        <!-- 6 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-6">
+          <h2 class="sv-q">When do you plan to buy?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('timeline','Now'); svNext();">⚡ Now</button>
+            <button class="sv-opt" onclick="svAnswer('timeline','Within 3 months'); svNext();">📅 Within 3 months</button>
+            <button class="sv-opt" onclick="svAnswer('timeline','3–12 months'); svNext();">🗓️ 3–12 months</button>
+            <button class="sv-opt" onclick="svAnswer('timeline','12+ months'); svNext();">🕰️ 12+ months</button>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-7">
+          <h2 class="sv-q">How will you finance the purchase?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('financing','Cash'); svNext();">💵 Cash</button>
+            <button class="sv-opt" onclick="svAnswer('financing','Developer Installments'); svNext();">🧱 Developer Plan</button>
+            <button class="sv-opt" onclick="svAnswer('financing','Bank Loan / Mortgage'); svNext();">🏦 Bank Loan</button>
+            <button class="sv-opt" onclick="svAnswer('financing','Not sure yet'); svNext();">🤷 Not sure yet</button>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-8">
+          <h2 class="sv-q">Residence permit / citizenship importance?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('residency','Must-have'); svNext();">✅ Must-have</button>
+            <button class="sv-opt" onclick="svAnswer('residency','Nice to have'); svNext();">✨ Nice to have</button>
+            <button class="sv-opt" onclick="svAnswer('residency','Not important'); svNext();">🚫 Not important</button>
+            <button class="sv-opt" onclick="svAnswer('residency','Need advice'); svNext();">🧭 Need advice</button>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-9">
+          <h2 class="sv-q">Planning a viewing visit?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('visit','Yes, dates fixed'); svNext();">✈️ Yes, dates fixed</button>
+            <button class="sv-opt" onclick="svAnswer('visit','Yes, planning soon'); svNext();">🗓️ Planning soon</button>
+            <button class="sv-opt" onclick="svAnswer('visit','Want online/virtual'); svNext();">💻 Online / Virtual</button>
+            <button class="sv-opt" onclick="svAnswer('visit','Not yet'); svNext();">⏳ Not yet</button>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-10">
+          <h2 class="sv-q">Preferred contact method?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('contact_method','WhatsApp'); svNext();">📱 WhatsApp</button>
+            <button class="sv-opt" onclick="svAnswer('contact_method','Phone call'); svNext();">📞 Phone</button>
+            <button class="sv-opt" onclick="svAnswer('contact_method','Email'); svNext();">✉️ Email</button>
+            <button class="sv-opt" onclick="svAnswer('contact_method','Any'); svNext();">🔔 Any</button>
+          </div>
+        </div>
+
+        <!-- 11 Name -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-11">
+          <h2 class="sv-q">Your full name</h2>
+          <div class="sv-field">
+            <input id="sv_full_name" class="sv-input" type="text" placeholder="Full Name" required>
+            <button class="sv-next" onclick="if(svRequire('sv_full_name','name')) svNext();">Next</button>
+          </div>
+        </div>
+
+        <!-- 12 Mobile -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-12">
+          <h2 class="sv-q">Your mobile number (incl. country code)</h2>
+          <div class="sv-field">
+            <input id="sv_mobile" class="sv-input" type="tel" placeholder="+90 5xx xxx xx xx" required>
+            <button class="sv-next" onclick="if(svRequire('sv_mobile','mobile')) svNext();">Next</button>
+          </div>
+        </div>
+
+        <!-- 13 Email -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-13">
+          <h2 class="sv-q">Your email</h2>
+          <div class="sv-field">
+            <input id="sv_email" class="sv-input" type="email" placeholder="name@example.com" required>
+            <button class="sv-next" onclick="if(svRequireEmail('sv_email','email')) svNext();">Next</button>
+          </div>
+          <div class="sv-help">We’ll use this only to send property options and your session details.</div>
+        </div>
+
+        <!-- 14 Notes -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-14">
+          <h2 class="sv-q">Any specific question or concern?</h2>
+          <div class="sv-field">
+            <textarea id="sv_notes" class="sv-input" rows="4" placeholder="Tell us what matters most…"></textarea>
+            <button class="sv-next" onclick="svSaveText('sv_notes','notes'); svNext();">Finish</button>
+          </div>
+        </div>
+
+        <!-- 15 Summary / WhatsApp -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-15">
+          <h2 class="sv-q">Thanks! ✅</h2>
+          <p class="sv-help">Below is your summary. We’ll open WhatsApp automatically; a button is provided as a fallback.</p>
+          <pre class="sv-pre" id="sv-summary">{}</pre>
+          <div class="sv-actions">
+            <a id="sv-waSendBtn" class="sv-btn sv-primary" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+            <a class="sv-btn sv-ghost" href="#" onclick="svCopySummary();return false;">Copy Summary</a>
+          </div>
+        </div>
+      </div>
+      <!-- =============== SURVEY END =============== -->
+
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL GET -->
+  <section>
+    <div class="container">
+      <h3 class="section-title">What you’ll get</h3>
+      <p class="section-lead">Clarity on locations, legal process, and hand-picked properties that match your goals.</p>
+      <div class="cards">
+        <article class="card"><div class="icon">📍</div><h4 style="margin:6px 0">Location shortlist</h4><p>Compare Istanbul, Antalya, and Northern Cyprus for lifestyle, yields, and appreciation potential.</p></article>
+        <article class="card"><div class="icon">🧭</div><h4 style="margin:6px 0">Buying roadmap</h4><p>Steps from viewing to Tapu: deposits, due diligence, taxes, utility setup, and move-in or renting.</p></article>
+        <article class="card"><div class="icon">📊</div><h4 style="margin:6px 0">Hand-picked projects</h4><p>New-build & resale options based on your budget, timeline, and whether you need residency.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <h3 class="section-title">How it works</h3>
+      <p class="section-lead">Simple, transparent, and tailored to you.</p>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h4>Quick intro call</h4><p>We align on your goals, budget, and preferred areas; we’ll also answer high-level questions.</p></div>
+        <div class="step"><div class="num">2</div><h4>Strategy & shortlist</h4><p>You’ll receive a location comparison and 5–10 curated options with pros/cons and payment plans.</p></div>
+        <div class="step"><div class="num">3</div><h4>Next steps</h4><p>Virtual/onsite viewings, lawyer check, reservation, and closing — all with our team guiding you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // ============== CONFIG ==============
+    const WA_NUMBER = '905425301811'; // international format without + or spaces
+
+    // ============== STATE & ELEMENTS ==============
+    const svSteps = Array.from(document.querySelectorAll('.sv-step'));
+    const svStepNumEl = document.getElementById('sv-stepnum');
+    const svStepTotalEl = document.getElementById('sv-steptotal');
+    const svBarFill = document.getElementById('sv-barfill');
+    const svSummaryEl = document.getElementById('sv-summary');
+    const svWaBtn = document.getElementById('sv-waSendBtn');
+
+    const SV_TOTAL_QUESTIONS = svSteps.length - 1; // last is summary screen
+    svStepTotalEl.textContent = SV_TOTAL_QUESTIONS;
+
+    const svAnswers = {};
+    let svCurrent = 1;
+
+    // ============== HELPERS EXPOSED ==============
+    function svAnswer(k,v){ svAnswers[k] = v; }
+    function svSaveText(id,k){
+      const el = document.getElementById(id);
+      if(!el) return;
+      svAnswers[k] = (el.value || '').trim();
+    }
+    function svRequire(id,key){
+      const el = document.getElementById(id);
+      if(!el) return false;
+      const v = (el.value || '').trim();
+      if(!v){ el.focus(); el.reportValidity?.(); return false; }
+      svAnswers[key] = v;
+      return true;
+    }
+    function svRequireEmail(id,key){
+      const el = document.getElementById(id);
+      if(!el) return false;
+      const v = (el.value || '').trim();
+      if(!v || !v.includes('@')){ el.focus(); el.reportValidity?.(); return false; }
+      svAnswers[key] = v;
+      return true;
+    }
+    function svCopySummary(){
+      navigator.clipboard?.writeText(svSummaryEl.textContent);
+      alert('Summary copied!');
+    }
+
+    function svBuildMsg(a){
+      // Build a WhatsApp-safe human-readable summary
+      return [
+        'New Buyer Survey (Turkey & Northern Cyprus)',
+        '----------------------------------------',
+        `Name: ${a.name||'-'}`,
+        `Mobile: ${a.mobile||'-'}`,
+        `Email: ${a.email||'-'}`,
+        `Goal: ${a.goal||'-'}`,
+        `Location: ${a.location||'-'}`,
+        `Type: ${a.type||'-'}`,
+        `Bedrooms: ${a.bedrooms||'-'}`,
+        `Budget: ${a.budget||'-'}`,
+        `Timeline: ${a.timeline||'-'}`,
+        `Financing: ${a.financing||'-'}`,
+        `Residency: ${a.residency||'-'}`,
+        `Viewing: ${a.visit||'-'}`,
+        `Contact Method: ${a.contact_method||'-'}`,
+        '',
+        `Notes: ${a.notes||'-'}`
+      ].join('\n');
+    }
+
+    function svWaUrl(text){
+      return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+    }
+
+    function svShow(n){
+      svSteps.forEach((s,i)=> s.classList.toggle('sv-hidden', (i !== n-1)));
+      svStepNumEl.textContent = Math.min(n, SV_TOTAL_QUESTIONS);
+      svBarFill.style.width = Math.round(((n-1)/SV_TOTAL_QUESTIONS)*100) + '%';
+      // scroll to survey top on step change (mobile-friendly)
+      document.getElementById('survey')?.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    function svFinish(){
+      const msg = svBuildMsg(svAnswers);
+      svSummaryEl.textContent = msg;
+      const url = svWaUrl(msg);
+      svWaBtn.setAttribute('href', url);
+
+      // Try auto-open WA; some browsers will block popups—button is fallback
+      setTimeout(()=>{ window.open(url,'_blank'); }, 200);
+    }
+
+    function svNext(){
+      svCurrent++;
+      if(svCurrent > svSteps.length) svCurrent = svSteps.length;
+      if(svCurrent === svSteps.length){ svFinish(); }
+      svShow(svCurrent);
+    }
+
+    // Expose needed funcs to inline buttons
+    window.svAnswer = svAnswer;
+    window.svSaveText = svSaveText;
+    window.svRequire = svRequire;
+    window.svRequireEmail = svRequireEmail;
+    window.svCopySummary = svCopySummary;
+    window.svNext = svNext;
+
+    // Init
+    svShow(1);
+  </script>
+</body>
 </html>
