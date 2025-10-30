@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- ensure proper scaling -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>TIMONDRO | Free 30-min Strategy Session</title>
 <style>
@@ -22,14 +22,10 @@ p{Margin:0}
   .stack{display:block!important;width:100%!important}
   .center{text-align:center!important}
   .btn{display:block!important;width:100%!important}
-  .p24{padding:24px!important}
   .px16{padding-left:16px!important;padding-right:16px!important}
-  .mt8{margin-top:8px!important}
-  .mt12{margin-top:12px!important}
-  .mt16{margin-top:16px!important}
-  .trust-logos table{width:100%!important}
-  .trust-logos td{display:inline-block!important;width:48%!important;max-width:48%!important;padding:10px 0!important}
-  h1{font-size:28px!important;line-height:1.25!important}
+  .logo-grid{width:100%!important}
+  .logo-col{display:inline-block!important;width:50%!important;max-width:50%!important}
+  .logo-wrap{width:100%!important}
   .hero-text{font-size:16px!important}
 }
 </style>
@@ -68,59 +64,77 @@ p{Margin:0}
               Get clear, honest advice about buying property in Turkey or Northern Cyprus.
             </p>
 
-            <!-- Buttons -->
-            <table role="presentation" align="center" style="margin:auto;">
+            <!-- Buttons row -->
+            <table role="presentation" align="center" cellpadding="0" cellspacing="0" style="margin:auto;">
               <tr>
                 <td class="stack" style="padding:6px;">
-                  <a href="https://wa.me/905425301811"
-                     class="btn"
-                     style="display:inline-block; padding:14px 24px; font:700 15px Arial,Helvetica,sans-serif;
-                            color:#081018; background:#fff; border-radius:10px; text-decoration:none;">
-                    📲 Chat on WhatsApp
-                  </a>
+                  <!-- WhatsApp button in its own block table for mobile reliability -->
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <a href="https://wa.me/905425301811"
+                           class="btn"
+                           style="display:inline-block; width:auto; padding:14px 24px; font:700 15px Arial,Helvetica,sans-serif;
+                                  color:#081018; background:#fff; border-radius:10px; text-decoration:none;">
+                          📲 Chat on WhatsApp
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
                 <td class="stack" style="padding:6px;">
-                  <a href="mailto:info@timondro.com"
-                     class="btn"
-                     style="display:inline-block; padding:14px 24px; font:700 15px Arial,Helvetica,sans-serif;
-                            color:#081018; background:#fff; border-radius:10px; text-decoration:none;">
-                    📧 Email Us
-                  </a>
+                  <!-- Email button in its own block table for mobile reliability -->
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <a href="mailto:info@timondro.com"
+                           class="btn"
+                           style="display:inline-block; width:auto; padding:14px 24px; font:700 15px Arial,Helvetica,sans-serif;
+                                  color:#081018; background:#fff; border-radius:10px; text-decoration:none;">
+                          📧 Email Us
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
+
           </td>
         </tr>
 
-        <!-- Trust logos (larger version + mobile wrap) -->
+        <!-- Trust logos (email-safe grid; no flex) -->
         <tr>
           <td style="padding:12px 28px 30px 28px;">
-            <table role="presentation" width="100%" class="trust-logos">
+            <table role="presentation" width="100%" class="logo-grid">
               <tr>
-                <td align="center" style="padding:6px;">
-                  <table role="presentation">
-                    <tr>
-                      <td style="padding:10px;">
-                        <div style="width:160px;height:72px;display:flex;align-items:center;justify-content:center;">
-                          <img src="google.png" alt="Google" style="max-height:60px;max-width:140px;display:block;">
-                        </div>
-                      </td>
-                      <td style="padding:10px;">
-                        <div style="width:160px;height:72px;display:flex;align-items:center;justify-content:center;">
-                          <img src="Meta-Logo.png" alt="Meta" style="max-height:60px;max-width:140px;display:block;">
-                        </div>
-                      </td>
-                      <td style="padding:10px;">
-                        <div style="width:160px;height:72px;display:flex;align-items:center;justify-content:center;">
-                          <img src="Ibb_amblem.png" alt="Büyükşehir Belediyesi" style="max-height:60px;max-width:140px;display:block;">
-                        </div>
-                      </td>
-                      <td style="padding:10px;">
-                        <div style="width:160px;height:72px;display:flex;align-items:center;justify-content:center;">
-                          <img src="handelsblatt.png" alt="Handelsblatt" style="max-height:60px;max-width:140px;display:block;">
-                        </div>
-                      </td>
-                    </tr>
+                <!-- Each logo in its own cell; same visual size via height attribute -->
+                <td class="logo-col" width="25%" align="center" valign="middle" style="padding:10px;">
+                  <table role="presentation" class="logo-wrap" cellpadding="0" cellspacing="0" style="width:140px;">
+                    <tr><td align="center" valign="middle">
+                      <img src="google.png" alt="Google" height="50" style="height:50px;width:auto;display:block;">
+                    </td></tr>
+                  </table>
+                </td>
+                <td class="logo-col" width="25%" align="center" valign="middle" style="padding:10px;">
+                  <table role="presentation" class="logo-wrap" cellpadding="0" cellspacing="0" style="width:140px;">
+                    <tr><td align="center" valign="middle">
+                      <img src="Meta-Logo.png" alt="Meta" height="50" style="height:50px;width:auto;display:block;">
+                    </td></tr>
+                  </table>
+                </td>
+                <td class="logo-col" width="25%" align="center" valign="middle" style="padding:10px;">
+                  <table role="presentation" class="logo-wrap" cellpadding="0" cellspacing="0" style="width:140px;">
+                    <tr><td align="center" valign="middle">
+                      <img src="Ibb_amblem.png" alt="Büyükşehir Belediyesi" height="50" style="height:50px;width:auto;display:block;">
+                    </td></tr>
+                  </table>
+                </td>
+                <td class="logo-col" width="25%" align="center" valign="middle" style="padding:10px;">
+                  <table role="presentation" class="logo-wrap" cellpadding="0" cellspacing="0" style="width:140px;">
+                    <tr><td align="center" valign="middle">
+                      <img src="handelsblatt.png" alt="Handelsblatt" height="50" style="height:50px;width:auto;display:block;">
+                    </td></tr>
                   </table>
                 </td>
               </tr>
@@ -133,7 +147,6 @@ p{Margin:0}
           <td style="padding:8px 28px;">
             <p style="font:700 18px/1.3 Arial, Helvetica, sans-serif; color:#0b0e11; Margin:0 0 10px;">What you’ll get</p>
 
-            <!-- 3-up on desktop, stacked on mobile -->
             <table role="presentation" width="100%">
               <tr>
                 <td class="stack" width="33.33%" valign="top" style="padding:6px;">
@@ -349,13 +362,13 @@ p{Margin:0}
           </td>
         </tr>
 
-        <!-- Final CTA -->
+        <!-- Final CTA (button made truly fluid on mobile) -->
         <tr>
           <td style="padding:8px 28px 28px 28px;">
             <table role="presentation" width="100%" style="background:#ffffff; border:1px solid rgba(207,108,51,.2); border-radius:14px;">
               <tr>
                 <td style="padding:18px;">
-                  <table role="presentation" width="100%" style="border-collapse:collapse;">
+                  <table role="presentation" width="100%">
                     <tr>
                       <td valign="middle" style="padding:6px;">
                         <p style="font:700 18px Arial, Helvetica, sans-serif; color:#f15a29; margin:0 0 6px;">
@@ -367,14 +380,22 @@ p{Margin:0}
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" style="padding:16px 6px 6px 6px;">
-                        <a href="https://wa.me/905425301811"
-                           class="btn"
-                           style="display:inline-block; padding:14px 26px; font:700 15px Arial, Helvetica, sans-serif; 
-                                  color:#ffffff; background:linear-gradient(135deg,#f15a29,#ff8a50); 
-                                  border-radius:10px; text-decoration:none; white-space:nowrap;">
-                          📲 Book on WhatsApp
-                        </a>
+                      <td style="padding:16px 6px 6px 6px;">
+                        <!-- Fluid button table ensures no overflow -->
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td align="center">
+                              <a href="https://wa.me/905425301811"
+                                 class="btn"
+                                 style="display:inline-block; width:100%; max-width:100%;
+                                        padding:14px 26px; font:700 15px Arial, Helvetica, sans-serif; 
+                                        color:#ffffff; background:linear-gradient(135deg,#f15a29,#ff8a50); 
+                                        border-radius:10px; text-decoration:none;">
+                                📲 Book on WhatsApp
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
