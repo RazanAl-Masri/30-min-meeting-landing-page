@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free 30-Min Strategy Session | TIMONDRO</title>
+  <meta name="description" content="Book a free 30-minute 1:1 strategy session. Get a buying roadmap for Turkey & Northern Cyprus: areas, legal steps, and smart deals." />
+
+  <!-- Google Fonts (safe; page-level only) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* Nothing global here on purpose to avoid collisions with your site/theme */
+    html, body { margin:0; padding:0; }
+  </style>
+</head>
+<body>
+
+<!-- ================= WRAPPED LANDING (scoped) ================= -->
+<div id="strategy-landing">
+  <style>
+  /* ===========================================================
+     SCOPE EVERYTHING UNDER #strategy-landing
+     =========================================================== */
+  #strategy-landing { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#000; }
+  #strategy-landing * { box-sizing: border-box; }
+  #strategy-landing img { max-width:100%; display:block; }
+  #strategy-landing a { color: inherit; text-decoration: none; }
+  #strategy-landing .sl-container { max-width:1100px; margin-inline:auto; padding:24px; }
+  #strategy-landing .sl-btn {
+    appearance:none; border:0; border-radius:12px; padding:14px 18px; font-weight:700; cursor:pointer;
+    background:linear-gradient(135deg,#f15a29,#ff8a50); color:#081018; box-shadow:0 10px 30px rgba(223,102,21,.35);
+    transition:transform .08s ease, box-shadow .2s ease; white-space:nowrap;
+  }
+  #strategy-landing .sl-btn:hover { transform: translateY(-1px); }
+  #strategy-landing .sl-btn:active { transform: translateY(0); }
+  #strategy-landing .sl-btn--ghost { background:#1a212b; color:#fff; box-shadow:none; }
+
+  /* Header (scoped) */
+  #strategy-landing .sl-header {
+    position: relative; /* not fixed to avoid template collisions */
+    background:#fff; color:#0b0e11; border-bottom:1px solid #e6e6e6;
+  }
+  #strategy-landing .sl-nav { display:flex; align-items:center; justify-content:space-between; padding:12px 24px; max-width:1200px; margin:0 auto; }
+  #strategy-landing .sl-brand { display:flex; align-items:center; gap:10px; }
+  #strategy-landing .sl-brand h1 { font-family:Poppins, Inter, sans-serif; font-size:18px; margin:0; font-weight:800; color:#0b0e11; }
+
+  /* Hero */
+  #strategy-landing .sl-hero { padding:40px 0 24px; }
+  #strategy-landing .sl-hero .sl-container { display:block; }
+  #strategy-landing .sl-hero-intro { max-width:900px; margin:0 auto; text-align:center; }
+  #strategy-landing .sl-eyebrow { color:#f15a29; font-weight:900; text-transform:uppercase; letter-spacing:.2em; font-size:24px; }
+  #strategy-landing .sl-eyebrow-zoom { font-size:18px; font-weight:600; color:#ff8a50; margin-left:10px; text-transform:none; }
+  #strategy-landing .sl-hero h2 { font-family:Poppins, Inter, sans-serif; font-size:40px; line-height:1.15; margin:10px 0 12px; }
+  #strategy-landing .sl-lead { font-size:18px; color:#6b7280; }
+  #strategy-landing .sl-badges { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; justify-content:center; }
+  #strategy-landing .sl-badge { display:flex; gap:8px; align-items:center; background:rgba(0,0,0,.03); border:1px solid rgba(0,0,0,.08); padding:8px 12px; border-radius:999px; font-size:13px; color:#111; }
+
+  /* Trust */
+  #strategy-landing .sl-trust { padding:24px 0 0; }
+  #strategy-landing .sl-trust .sl-bar { display:flex; gap:24px; flex-wrap:wrap; align-items:center; justify-content:center; opacity:.85; }
+  #strategy-landing .sl-trust .sl-bar img { height:28px; filter:grayscale(100%) contrast(105%) opacity(.8); }
+
+  /* Sections */
+  #strategy-landing section { padding:60px 0; }
+  #strategy-landing .sl-section-title { font-size:28px; font-family:Poppins, Inter, sans-serif; margin:0 0 8px; color:#0b0e11; }
+  #strategy-landing .sl-section-lead { color:#6b7280; margin:0 0 22px; }
+  #strategy-landing .sl-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  #strategy-landing .sl-card { background:#11151a; border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:18px; color:#e8eef6; }
+  #strategy-landing .sl-card h4 { margin:4px 0 6px; }
+  #strategy-landing .sl-icon { width:38px; height:38px; border-radius:10px; display:grid; place-items:center; background:linear-gradient(135deg,rgba(96,165,250,.25),rgba(45,212,191,.25)); border:1px solid rgba(255,255,255,.1); }
+
+  #strategy-landing .sl-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  #strategy-landing .sl-step { position:relative; background:#11151a; border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:18px; color:#e8eef6; }
+  #strategy-landing .sl-step .sl-num { position:absolute; top:-12px; left:-12px; width:44px; height:44px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg,#f15a29,#ff8a50); color:#081018; font-weight:900; }
+
+  /* Testimonials */
+  #strategy-landing .sl-slider { position:relative; }
+  #strategy-landing .sl-slides { display:flex; gap:16px; overflow:auto; scroll-snap-type:x mandatory; padding-bottom:6px; }
+  #strategy-landing .sl-testimonial { scroll-snap-align:start; min-width:320px; background:#fff; color:#000; border:1px solid rgba(0,0,0,.1); border-radius:16px; padding:18px; }
+  #strategy-landing .sl-t-meta { display:flex; align-items:center; gap:10px; margin-top:12px; }
+  #strategy-landing .sl-avatar { width:36px; height:36px; border-radius:999px; background:linear-gradient(135deg,#ff8a50,#f15a29); }
+
+  /* FAQ */
+  #strategy-landing .sl-faq { max-width:900px; margin-inline:auto; }
+  #strategy-landing .sl-faq-item { border:1px solid rgba(0,0,0,.08); background:#fff; border-radius:14px; margin:10px 0; color:#111; }
+  #strategy-landing .sl-faq-q { padding:16px 18px; cursor:pointer; font-weight:600; list-style:none; }
+  #strategy-landing .sl-faq-q::-webkit-details-marker { display:none; }
+  #strategy-landing .sl-faq-a { padding:0 18px 16px 18px; color:#333; }
+
+  /* CTA */
+  #strategy-landing .sl-cta { background:#fff; border:1px solid rgba(207,108,51,.15); border-radius:18px; padding:22px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+  #strategy-landing .sl-cta h3, 
+  #strategy-landing .sl-cta strong { color:#f15a29; }
+  #strategy-landing .sl-cta p, 
+  #strategy-landing .sl-cta .sl-section-lead { color:#000; font-weight:bold; }
+
+  /* Video/Text */
+  #strategy-landing #video-text-section { background:#f9f9f9; padding:40px 0; }
+  #strategy-landing #video-text-section .sl-block { display:flex; gap:20px; margin-bottom:40px; }
+  #strategy-landing #video-text-section .sl-block.reverse { flex-direction:row-reverse; }
+  #strategy-landing #video-text-section .sl-media { flex:1; max-width:600px; margin:0 auto; }
+  #strategy-landing #video-text-section .sl-media iframe { width:100%; height:315px; border:0; }
+  #strategy-landing #video-text-section .sl-text { flex:1; }
+  #strategy-landing #video-text-section .sl-text h4 { font-size:22px; font-weight:600; color:#000; margin-bottom:10px; }
+  #strategy-landing #video-text-section .sl-text p { font-size:16px; color:#6b7280; margin-bottom:5px; }
+
+  /* Footer (scoped) */
+  #strategy-landing .sl-footer { padding:28px 0 48px; background:#fff; color:#333; border-top:1px solid #e6e6e6; }
+  #strategy-landing .sl-foot { display:flex; gap:16px; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+
+  /* Sticky CTA (scoped) */
+  #strategy-landing .sl-sticky-cta { position:relative; display:none; }
+
+  /* Survey (scoped) */
+  #strategy-landing .survey-wrap{ max-width:960px; margin:28px auto 0; }
+  #strategy-landing .sv-progress{ display:flex; align-items:center; gap:10px; margin:0 0 24px; }
+  #strategy-landing .sv-bar{ flex:1; height:12px; background:#e5e7eb; border-radius:999px; overflow:hidden; }
+  #strategy-landing .sv-bar>i{ display:block; height:12px; background:linear-gradient(90deg,#f15a29,#ff8a50); width:0%; }
+  #strategy-landing .sv-stepcount{ font-size:14px; color:#64748b; }
+  #strategy-landing .sv-card{ background:#fff; border:1px solid #e5e7eb; border-radius:22px; box-shadow:0 12px 36px rgba(15,23,42,.12); padding:32px; }
+  #strategy-landing .sv-q{ margin:0 0 24px; font-size:26px; line-height:1.4; }
+  #strategy-landing .sv-grid{ display:grid; gap:18px; }
+  @media (min-width:720px){ #strategy-landing .sv-grid{ grid-template-columns:repeat(2,1fr); } }
+  #strategy-landing .sv-opt{ border:2px solid #e5e7eb; background:#fff; border-radius:18px; padding:28px 20px; text-align:center; cursor:pointer; font-size:18px; line-height:1.3; }
+  #strategy-landing .sv-opt:hover{ border-color:#d1d5db; box-shadow:0 10px 24px rgba(15,23,42,.1); }
+  #strategy-landing .sv-hidden{ display:none; }
+  #strategy-landing .sv-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
+  #strategy-landing .sv-btn{ padding:16px 22px; border-radius:14px; text-decoration:none; display:inline-block; font-size:16px; }
+  #strategy-landing .sv-primary{ color:#fff; background:linear-gradient(90deg,#f15a29,#ff8a50); }
+  #strategy-landing .sv-ghost{ color:#f15a29; border:2px solid #f15a29; background:#fff; }
+  #strategy-landing .sv-help{ color:#64748b; font-size:14px; margin-top:8px; }
+  #strategy-landing .sv-pre{ background:#0b1220; color:#e2e8f0; border-radius:14px; padding:16px; overflow:auto; font-size:15px; }
+  #strategy-landing .sv-field{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+  #strategy-landing .sv-input{ width:100%; max-width:100%; padding:18px 20px; border:2px solid #e5e7eb; border-radius:14px; font-size:17px; box-sizing:border-box; }
+  #strategy-landing textarea.sv-input{ resize:vertical; min-height:100px; }
+  #strategy-landing .sv-next{ padding:16px 20px; border-radius:14px; border:2px solid #f15a29; background:#fff; color:#f15a29; cursor:pointer; font-size:16px; }
+
+  /* Trust logos override per your note */
+  #strategy-landing .sl-trust img {
+    height: 60px !important;   /* force bigger */
+    width: auto !important;
+    filter: none !important;   /* remove greyscale */
+    opacity: 1 !important;     /* reset opacity */
+    margin: 0 16px !important; /* space between logos */
+  }
+
+  /* Responsive reductions (scoped) */
+  @media (max-width:960px){
+    #strategy-landing .sl-hero h2 { font-size:32px; }
+    #strategy-landing .sl-cards{ grid-template-columns:1fr; }
+    #strategy-landing .sl-steps{ grid-template-columns:1fr; }
+    #strategy-landing #video-text-section .sl-media iframe { height:250px; }
+  }
+  </style>
+
+  <!-- Header -->
+  <div class="sl-header">
+    <div class="sl-nav">
+      <div class="sl-brand">
+        <!-- Optional logo/title if needed -->
+        <!-- <img src="/path/to/logo.png" alt="TIMONDRO" style="height:44px;width:auto"> -->
+        <h1>Free Strategy Session</h1>
+      </div>
+      <!-- Right side empty by design to avoid collisions -->
+    </div>
+  </div>
+
+  <!-- Hero + Survey -->
+  <section class="sl-hero" id="sl-top">
+    <div class="sl-container">
+      <div class="sl-hero-intro">
+        <div class="sl-eyebrow">🚨 Last Chance! 🚨 <span class="sl-eyebrow-zoom">Book Your 1:1 Online Meeting NOW!</span></div>
+        <h2>⏳ 30 Minutes Only – Limited Spots Available! ⏳</h2>
+        <p class="sl-lead"><strong>Don't miss out on the opportunity to secure personalized real estate advice from an expert. <u>Book your spot before it’s too late!</u></strong></p>
+
+        <div class="sl-badges" aria-label="Highlights">
+          <div class="sl-badge">✅ Senior advisor, not a bot</div>
+          <div class="sl-badge">✅ Developer & resale options</div>
+          <div class="sl-badge">✅ Clear legal guidance</div>
+          <div class="sl-badge">✅ No pressure, no fees</div>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;justify-content:center">
+          <a class="sl-btn" href="#sl-survey">Book your session</a>
+          <a class="sl-btn sl-btn--ghost" href="#process">See how it works</a>
+        </div>
+
+        <div class="sl-trust">
+          <div class="sl-bar" aria-label="As seen on / trusted by">
+            <img src="/images/Content/buying-property/30min/google.png" alt="Google" />
+            <img src="/images/Content/buying-property/30min/Meta-Logo.png" alt="Meta" />
+            <img src="/images/Content/buying-property/30min/Ibb_amblem.png" alt="Büyükşehir Belediyesi" />
+            <img src="/images/Content/buying-property/30min/handelsblatt.png" alt="Handelsblatt" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SURVEY START (scoped under #strategy-landing) ===== -->
+      <div id="sl-survey" class="survey-wrap">
+        <!-- Progress -->
+        <div class="sv-progress">
+          <div class="sv-bar"><i id="sv-barfill" style="width:0%"></i></div>
+          <div class="sv-stepcount">Step <b id="sv-stepnum">1</b>/<b id="sv-steptotal">15</b></div>
+        </div>
+
+        <!-- 1 -->
+        <div class="sv-card sv-step" id="sv-step-1">
+          <h2 class="sv-q">What’s your main goal?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('goal','Holiday Home'); svNext();">🏖️ Holiday Home</button>
+            <button class="sv-opt" onclick="svAnswer('goal','Investment / Rental'); svNext();">💼 Investment / Rental</button>
+            <button class="sv-opt" onclick="svAnswer('goal','Relocation'); svNext();">🏠 Relocation</button>
+            <button class="sv-opt" onclick="svAnswer('goal','Residence Permit'); svNext();">🛂 Residence Permit</button>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-2">
+          <h2 class="sv-q">Preferred location?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('location','Istanbul'); svNext();">🌆 Istanbul</button>
+            <button class="sv-opt" onclick="svAnswer('location','Antalya / Alanya'); svNext();">🌴 Antalya / Alanya</button>
+            <button class="sv-opt" onclick="svAnswer('location','Northern Cyprus'); svNext();">🌊 Northern Cyprus</button>
+            <button class="sv-opt" onclick="svAnswer('location','Not sure yet'); svNext();">🤔 Not sure yet</button>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-3">
+          <h2 class="sv-q">Property type?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('type','Apartment'); svNext();">🏢 Apartment</button>
+            <button class="sv-opt" onclick="svAnswer('type','Villa / House'); svNext();">🏡 Villa / House</button>
+            <button class="sv-opt" onclick="svAnswer('type','Land'); svNext();">🌿 Land</button>
+            <button class="sv-opt" onclick="svAnswer('type','Open to options'); svNext();">🔍 Open to options</button>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-4">
+          <h2 class="sv-q">Bedrooms needed?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('bedrooms','Studio / 1+1'); svNext();">🛏️ Studio / 1+1</button>
+            <button class="sv-opt" onclick="svAnswer('bedrooms','2+1'); svNext();">🛏️ 2+1</button>
+            <button class="sv-opt" onclick="svAnswer('bedrooms','3+1'); svNext();">🛏️ 3+1</button>
+            <button class="sv-opt" onclick="svAnswer('bedrooms','4+1 or more'); svNext();">🛏️ 4+1+</button>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-5">
+          <h2 class="sv-q">Budget range?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('budget','Up to €100k (≈ $110k / £86k / ₺3.9M)'); svNext();">🪙 Up to €100k</button>
+            <button class="sv-opt" onclick="svAnswer('budget','€100k–€200k (≈ $110k–$220k / £86k–£172k / ₺3.9M–₺7.8M)'); svNext();">💶 €100k–€200k</button>
+            <button class="sv-opt" onclick="svAnswer('budget','€200k–€500k'); svNext();">💷 €200k–€500k</button>
+            <button class="sv-opt" onclick="svAnswer('budget','€500k+'); svNext();">💎 €500k+</button>
+          </div>
+          <div class="sv-help">Shown in EUR with helpful USD/GBP/TRY equivalents.</div>
+        </div>
+
+        <!-- 6 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-6">
+          <h2 class="sv-q">When do you plan to buy?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('timeline','Now'); svNext();">⚡ Now</button>
+            <button class="sv-opt" onclick="svAnswer('timeline','Within 3 months'); svNext();">📅 Within 3 months</button>
+            <button class="sv-opt" onclick="svAnswer('timeline','3–12 months'); svNext();">🗓️ 3–12 months</button>
+            <button class="sv-opt" onclick="svAnswer('timeline','12+ months'); svNext();">🕰️ 12+ months</button>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-7">
+          <h2 class="sv-q">How will you finance the purchase?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('financing','Cash'); svNext();">💵 Cash</button>
+            <button class="sv-opt" onclick="svAnswer('financing','Developer Installments'); svNext();">🧱 Developer Plan</button>
+            <button class="sv-opt" onclick="svAnswer('financing','Bank Loan / Mortgage'); svNext();">🏦 Bank Loan</button>
+            <button class="sv-opt" onclick="svAnswer('financing','Not sure yet'); svNext();">🤷 Not sure yet</button>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-8">
+          <h2 class="sv-q">Residence permit/citizenship importance?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('residency','Must-have'); svNext();">✅ Must-have</button>
+            <button class="sv-opt" onclick="svAnswer('residency','Nice to have'); svNext();">✨ Nice to have</button>
+            <button class="sv-opt" onclick="svAnswer('residency','Not important'); svNext();">🚫 Not important</button>
+            <button class="sv-opt" onclick="svAnswer('residency','Need advice'); svNext();">🧭 Need advice</button>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-9">
+          <h2 class="sv-q">Planning a viewing visit?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('visit','Yes, dates fixed'); svNext();">✈️ Yes, dates fixed</button>
+            <button class="sv-opt" onclick="svAnswer('visit','Yes, planning soon'); svNext();">🗓️ Planning soon</button>
+            <button class="sv-opt" onclick="svAnswer('visit','Want online/virtual'); svNext();">💻 Online / Virtual</button>
+            <button class="sv-opt" onclick="svAnswer('visit','Not yet'); svNext();">⏳ Not yet</button>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-10">
+          <h2 class="sv-q">Preferred contact method?</h2>
+          <div class="sv-grid">
+            <button class="sv-opt" onclick="svAnswer('contact_method','WhatsApp'); svNext();">📱 WhatsApp</button>
+            <button class="sv-opt" onclick="svAnswer('contact_method','Phone call'); svNext();">📞 Phone</button>
+            <button class="sv-opt" onclick="svAnswer('contact_method','Email'); svNext();">✉️ Email</button>
+            <button class="sv-opt" onclick="svAnswer('contact_method','Any'); svNext();">🔔 Any</button>
+          </div>
+        </div>
+
+        <!-- 11 Name (required) -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-11">
+          <h2 class="sv-q">Your Name</h2>
+          <div class="sv-field">
+            <input id="sv_name" class="sv-input" type="text" placeholder="Enter your name" required />
+            <button class="sv-next" onclick="if(svRequireText('sv_name','name')) svNext();">Next</button>
+          </div>
+        </div>
+
+        <!-- 12 Surname (required) -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-12">
+          <h2 class="sv-q">Your Surname</h2>
+          <div class="sv-field">
+            <input id="sv_surname" class="sv-input" type="text" placeholder="Enter your surname" required />
+            <button class="sv-next" onclick="if(svRequireText('sv_surname','surname')) svNext();">Next</button>
+          </div>
+        </div>
+
+        <!-- 13 Mobile (required) -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-13">
+          <h2 class="sv-q">Your Mobile Number</h2>
+          <div class="sv-field">
+            <input id="sv_mobile" class="sv-input" type="tel" placeholder="+90 5xx xxx xx xx" required />
+            <button class="sv-next" onclick="if(svRequireText('sv_mobile','mobile')) svNext();">Next</button>
+          </div>
+        </div>
+
+        <!-- 14 Email (required, must contain @) -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-14">
+          <h2 class="sv-q">Your Email</h2>
+          <div class="sv-field">
+            <input id="sv_email" class="sv-input" type="email" placeholder="you@example.com" required />
+            <button class="sv-next" onclick="if(svRequireEmail('sv_email','email')) svNext();">Next</button>
+          </div>
+          <div class="sv-help">We’ll use this only to send property options and your session details.</div>
+        </div>
+
+        <!-- 15 Notes (optional) -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-15">
+          <h2 class="sv-q">Any specific question or concern?</h2>
+          <div class="sv-field">
+            <textarea id="sv_notes" class="sv-input" rows="4" placeholder="Tell us what matters most…"></textarea>
+            <button class="sv-next" onclick="svSaveText('sv_notes','notes'); svNext();">Finish</button>
+          </div>
+        </div>
+
+        <!-- 16 END / Summary -->
+        <div class="sv-card sv-step sv-hidden" id="sv-step-16">
+          <h2 class="sv-q">Thanks! ✅</h2>
+          <p class="sv-help">Below is the summary. You can send it directly to WhatsApp.</p>
+          <pre class="sv-pre" id="sv-summary">{}</pre>
+          <div class="sv-actions">
+            <a id="sv-waSendBtn" class="sv-btn sv-primary" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+            <a class="sv-btn sv-ghost" href="#" onclick="svCopySummary();return false;">Copy Summary</a>
+          </div>
+        </div>
+      </div>
+      <!-- ===== SURVEY END ===== -->
+
+    </div>
+  </section>
+
+  <!-- ===== What you’ll get ===== -->
+  <section aria-labelledby="benefits">
+    <div class="sl-container">
+      <h3 id="benefits" class="sl-section-title">What you’ll get</h3>
+      <p class="sl-section-lead">Clarity on locations, legal process, and hand-picked properties that match your goals.</p>
+      <div class="sl-cards">
+        <article class="sl-card"><div class="sl-icon">📍</div><h4>Location shortlist</h4><p>Compare Istanbul, Antalya, and Northern Cyprus for lifestyle, yields, and appreciation potential.</p></article>
+        <article class="sl-card"><div class="sl-icon">🧭</div><h4>Buying roadmap</h4><p>Steps from viewing to Tapu: deposits, due diligence, taxes, utility setup, and move-in or renting.</p></article>
+        <article class="sl-card"><div class="sl-icon">📊</div><h4>Hand-picked projects</h4><p>New-build & resale options based on your budget, timeline, and whether you need residency.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Process ===== -->
+  <section id="process" aria-labelledby="process-title">
+    <div class="sl-container">
+      <h3 id="process-title" class="sl-section-title">How it works</h3>
+      <p class="sl-section-lead">Simple, transparent, and tailored to you.</p>
+      <div class="sl-steps">
+        <div class="sl-step"><div class="sl-num">1</div><h4>Quick intro call</h4><p>We align on your goals, budget, and preferred areas; we’ll also answer high-level questions.</p></div>
+        <div class="sl-step"><div class="sl-num">2</div><h4>Strategy & shortlist</h4><p>You’ll receive a location comparison and 5–10 curated options with pros/cons and payment plans.</p></div>
+        <div class="sl-step"><div class="sl-num">3</div><h4>Next steps</h4><p>Virtual/onsite viewings, lawyer check, reservation, and closing — all with our team guiding you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section aria-labelledby="testimonials">
+    <div class="sl-container sl-slider">
+      <h3 id="testimonials" class="sl-section-title">What buyers say</h3>
+      <p class="sl-section-lead">Real feedback from clients who purchased through us.</p>
+      <div class="sl-slides" aria-label="Testimonials">
+        <figure class="sl-testimonial"><blockquote>“They really listened. Within one week I had a clear plan and three excellent options in Istanbul.”</blockquote><figcaption class="sl-t-meta"><span class="sl-avatar"></span> <strong>Anna K.</strong> — Germany</figcaption></figure>
+        <figure class="sl-testimonial"><blockquote>“The residency guidance was gold. We bought in Kyrenia and rented it out in 10 days.”</blockquote><figcaption class="sl-t-meta"><span class="sl-avatar"></span> <strong>H. Al-Saud</strong> — KSA</figcaption></figure>
+        <figure class="sl-testimonial"><blockquote>“Transparent, fast, and no pressure. Highly recommend for Antalya/Alanya.”</blockquote><figcaption class="sl-t-meta"><span class="sl-avatar"></span> <strong>M. Ionescu</strong> — Romania</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section aria-labelledby="faq">
+    <div class="sl-container sl-faq">
+      <h3 id="faq" class="sl-section-title">FAQ</h3>
+      <details class="sl-faq-item">
+        <summary class="sl-faq-q">Is the session really free?</summary>
+        <div class="sl-faq-a">Yes. It’s a value call. If you decide to buy through us later, developers typically pay our fee.</div>
+      </details>
+      <details class="sl-faq-item">
+        <summary class="sl-faq-q">Can you help with Ikamet (residency)?</summary>
+        <div class="sl-faq-a">We’ll explain the current thresholds and documents; we can recommend lawyers and handle the process end-to-end.</div>
+      </details>
+      <details class="sl-faq-item">
+        <summary class="sl-faq-q">Do you cover both off-plan and ready units?</summary>
+        <div class="sl-faq-a">Yes — including payment plans on new builds and immediate-use resales with high rental demand.</div>
+      </details>
+      <details class="sl-faq-item">
+        <summary class="sl-faq-q">How soon can we schedule viewings?</summary>
+        <div class="sl-faq-a">Virtual viewings can happen within 24–48 hours; onsite tours depend on your travel dates.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== Detail ===== -->
+  <section id="detail" aria-labelledby="detail-title">
+    <div class="sl-container">
+      <h3 id="detail-title" class="sl-section-title">What We’ll Cover in Your Strategy Session</h3>
+      <p class="sl-section-lead">In just 30 minutes, you’ll get clarity on how TIMONDRO can help you buy the right property in Turkey or Northern Cyprus — safely, profitably, and stress-free.</p>
+      <div class="sl-steps" style="margin-top:10px">
+        <div class="sl-step"><div class="sl-num">1</div><h4>Understanding Your Goals</h4><p>We start by learning what you want to achieve with your property: holiday home, rental income, residency, or long-term investment. Based on this, we guide you to the most suitable areas and project types.</p><p><strong>Result:</strong> You’ll know exactly which regions (Istanbul, Antalya, Northern Cyprus) match your lifestyle and financial goals.</p></div>
+        <div class="sl-step"><div class="sl-num">2</div><h4>Legal & Financial Guidance</h4><p>We explain the buying process step by step: Tapu (title deed) registration, taxes, payment plans, mortgages, and residency permits. We also highlight common pitfalls and how to avoid them.</p><p><strong>Result:</strong> You’ll leave the call confident about the full process — from reservation to title transfer — with no hidden surprises.</p></div>
+        <div class="sl-step"><div class="sl-num">3</div><h4>Property Shortlist & Next Steps</h4><p>Based on your preferences and budget, we’ll prepare a personalized shortlist of properties…</p><p><strong>Result:</strong> A clear action plan with property options that fit your needs and timeline.</p></div>
+      </div>
+      <div class="sl-card" style="margin-top:18px">
+        <h4>Preparation Before the Call</h4>
+        <p>You’ll receive a short questionnaire so we can focus on your individual situation. This ensures the session is tailored 100% to your requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section aria-labelledby="cta-en">
+    <div class="sl-container">
+      <div class="sl-cta">
+        <div>
+          <h3 id="cta-en">⚡ Limited Free Sessions Available ⚡</h3>
+          <p class="sl-section-lead">Book your free 30-minute strategy session with TIMONDRO today.</p>
+        </div>
+        <a class="sl-btn" href="#sl-survey">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Video/Text ===== -->
+  <section id="video-text-section">
+    <div class="sl-container">
+      <h3 class="sl-section-title">Gain Insights and Tips on Real Estate with TIMONDRO’s Expert Content</h3>
+      <p class="sl-section-lead">Watch these informative videos…</p>
+      <div class="sl-block">
+        <div class="sl-media"><iframe src="https://www.youtube.com/embed/l4jOUOaV0Hw?t=89s" title="YouTube video" allowfullscreen></iframe></div>
+        <div class="sl-text"><h4>5 Essential Tips for Buying Property in Turkey</h4><p>…</p><p><strong>Watch and Learn More!</strong></p></div>
+      </div>
+      <div class="sl-block reverse">
+        <div class="sl-text"><h4>Understanding the Real Estate Market in Northern Cyprus</h4><p>…</p><p><strong>Watch and Get Insightful Advice!</strong></p></div>
+        <div class="sl-media"><iframe src="https://www.youtube.com/embed/pxNuSQrkCxc" title="YouTube video" allowfullscreen></iframe></div>
+      </div>
+      <div class="sl-block">
+        <div class="sl-media"><iframe src="https://www.youtube.com/embed/s_npYsMmLmU" title="YouTube video" allowfullscreen></iframe></div>
+        <div class="sl-text"><h4>How to Secure the Best Deals in Real Estate</h4><p>…</p><p><strong>Start Watching Now!</strong></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cta-en-2">
+    <div class="sl-container">
+      <div class="sl-cta">
+        <div>
+          <h3 id="cta-en-2">⚡ Hurry, Only a Few Spots Left! ⚡</h3>
+          <p class="sl-section-lead">Secure your 30-minute one-on-one strategy call now.</p>
+        </div>
+        <a class="sl-btn" href="#sl-survey">Reserve Your Spot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WordPress shortcode (kept as-is for WP rendering) -->
+  [googlereviewspro id="1"]
+
+  <!-- Footer (scoped) -->
+  <div class="sl-footer">
+    <div class="sl-container sl-foot">
+      <div style="display:flex;align-items:center;gap:12px">
+        <!-- <img src="/path/to/logo.png" alt="TIMONDRO" style="height:50px;width:auto" /> -->
+        <div><strong>TIMONDRO Real Estate</strong><br>• Türkiye • Istanbul • Antalya • Alanya • Belek • Northern Cyprus</div>
+      </div>
+      <div><a href="#sl-survey" class="sl-btn">Start now</a></div>
+    </div>
+  </div>
+
+  <div class="sl-sticky-cta">
+    <a href="#sl-survey" class="sl-btn">Book your free session</a>
+  </div>
+
+  <script>
+  (function(){
+    // Scope everything to the landing wrapper
+    const root = document.getElementById('strategy-landing');
+    const svRoot = root.querySelector('#sl-survey');
+
+    // WhatsApp number in international format, no "+" or spaces
+    const WA_NUMBER = '905425301811';
+
+    // Elements
+    const svSteps = Array.from(svRoot.querySelectorAll('.sv-step'));
+    const svStepNumEl = svRoot.querySelector('#sv-stepnum');
+    const svStepTotalEl = svRoot.querySelector('#sv-steptotal');
+    const svBarFill = svRoot.querySelector('#sv-barfill');
+    const svSummaryEl = svRoot.querySelector('#sv-summary');
+    const svWaBtn = svRoot.querySelector('#sv-waSendBtn');
+
+    // Total "question" steps (exclude final summary)
+    const SV_TOTAL_QUESTIONS = svSteps.length - 1; // 16 - 1 = 15
+    if (svStepTotalEl) svStepTotalEl.textContent = SV_TOTAL_QUESTIONS;
+
+    // State
+    const svAnswers = {};
+    let svCurrent = 1;
+
+    // Helpers (exposed to inline handlers)
+    window.svAnswer = function(k,v){ svAnswers[k] = v; };
+
+    window.svSaveText = function(id,k){
+      const el = svRoot.querySelector('#'+CSS.escape(id));
+      if(!el) return;
+      const val = (el.value || '').trim();
+      svAnswers[k] = val;
+    };
+
+    window.svRequireText = function(id,key){
+      const el = svRoot.querySelector('#'+CSS.escape(id));
+      if(!el) return false;
+      const val = (el.value || '').trim();
+      if(!val){ el.focus(); el.reportValidity?.(); return false; }
+      svAnswers[key] = val;
+      return true;
+    };
+
+    window.svRequireEmail = function(id,key){
+      const el = svRoot.querySelector('#'+CSS.escape(id));
+      if(!el) return false;
+      const val = (el.value || '').trim();
+      const ok = !!val && val.includes('@');
+      if(!ok){ el.focus(); el.reportValidity?.(); return false; }
+      svAnswers[key] = val;
+      return true;
+    };
+
+    window.svCopySummary = function(){
+      navigator.clipboard?.writeText(svSummaryEl.textContent);
+      alert('Summary copied!');
+    };
+
+    // WAF-safe message builder (avoid header-like tokens at line start)
+    function svBuildMsg(a){
+      return [
+        'New Buyer Survey (Turkey & Northern Cyprus)',
+        '----------------------------------------',
+        `• Name — ${a.name||'-'}`,
+        `• Surname — ${a.surname||'-'}`,
+        `• Mobile — ${a.mobile||'-'}`,
+        `• Email — ${a.email||'-'}`,
+        `• Goal — ${a.goal||'-'}`,
+        `• Area / City — ${a.location||'-'}`,
+        `• Property Type — ${a.type||'-'}`,
+        `• Bedrooms — ${a.bedrooms||'-'}`,
+        `• Budget — ${a.budget||'-'}`,
+        `• Timeline — ${a.timeline||'-'}`,
+        `• Financing — ${a.financing||'-'}`,
+        `• Residency Importance — ${a.residency||'-'}`,
+        `• Viewing Plan — ${a.visit||'-'}`,
+        `• Contact Method — ${a.contact_method||'-'}`,
+        '',
+        `Notes — ${a.notes||'-'}`
+      ].join('\n');
+    }
+
+    function svWaUrl(text){
+      return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+    }
+
+    function svShow(n){
+      svSteps.forEach((s,i)=> s.classList.toggle('sv-hidden', (i !== n-1)));
+      if (svStepNumEl) svStepNumEl.textContent = Math.min(n, SV_TOTAL_QUESTIONS);
+      if (svBarFill) svBarFill.style.width = Math.round(((n-1)/SV_TOTAL_QUESTIONS)*100) + '%';
+    }
+
+    window.svNext = function(){
+      svCurrent++;
+      if(svCurrent > svSteps.length) svCurrent = svSteps.length;
+
+      // If on final screen, prepare summary + WA link
+      if(svCurrent === svSteps.length){
+        const msg = svBuildMsg(svAnswers);
+        if (svSummaryEl) svSummaryEl.textContent = msg;
+        const url = svWaUrl(msg);
+        if (svWaBtn) svWaBtn.setAttribute('href', url);
+        setTimeout(()=>{ window.open(url,'_blank'); }, 250); // graceful fallback: button exists
+      }
+      svShow(svCurrent);
+    };
+
+    // Init
+    svShow(1);
+  })();
+  </script>
+</div>
+<!-- ================= END WRAPPED LANDING ================= -->
+
+</body>
+</html>
